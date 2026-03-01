@@ -5,7 +5,10 @@ namespace MauiAppMinhasCompras.Views
     {
         internal static double ToDouble(string text)
         {
-            throw new NotImplementedException();
+            if (double.TryParse(text, out double valor))
+                return valor;
+
+            return 0;
         }
     }
 }
