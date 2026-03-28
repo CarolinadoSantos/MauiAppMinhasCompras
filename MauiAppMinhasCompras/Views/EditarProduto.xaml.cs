@@ -21,6 +21,7 @@ public partial class EditarProduto : ContentPage
                 Descricao = txt_descricao.Text,
                 Quantidade = Converter.ToDouble(txt_quantidade.Text),
                 Preco = Converter.ToDouble(txt_preco.Text),
+                Categoria = txt_categoria.Text,
             };
 
              await App.Db.Update(p);
